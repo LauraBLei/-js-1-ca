@@ -6,6 +6,19 @@ import { goToCartPage } from "./pages/cartPage.mjs";
 import { runConfirmationPage } from "./pages/confirmation.mjs";
 import { loader } from "./components/loaders.mjs";
 
+export const noroffAPI = "https://v2.api.noroff.dev/gamehub";
+
+export const dataAPI = async(url) => {
+    try{
+        let response = await fetch(url)
+        let games = await response.json()
+        localStorage.setItem("arrayOfGames", JSON.stringify(games.data))
+    }catch(error){
+        console.error("there was a problem fetching:" + error);
+    }
+}
+
+loader(dataAPI, noroffAPI)
 
 export function router() {
     const url = new URL(window.location.href);
@@ -41,16 +54,5 @@ document.addEventListener('DOMContentLoaded', () =>{
 
 
 
-export const noroffAPI = "https://v2.api.noroff.dev/gamehub";
 
-export const dataAPI = async(url) => {
-    try{
-        let response = await fetch(url)
-        let games = await response.json()
-        localStorage.setItem("arrayOfGames", JSON.stringify(games.data))
-    }catch(error){
-        console.error("there was a problem fetching:" + error);
-    }
-}
 
-loader(dataAPI, noroffAPI)
