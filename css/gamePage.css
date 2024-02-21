@@ -1,0 +1,81 @@
+.gamePageContainer{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gameBox{
+height: auto;
+}
+
+.gameIMGBox{
+    width: 563px;
+    height: 568px;
+    color: var(--white);
+}
+
+.gamePrice{
+    color: var(--white);
+    background-color: var(--orange);
+    width: 564px;
+    height: 103px;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.addToCartButton, .addToFavButton{
+    width: 272px;
+    height: 103px;
+    color: var(--white);
+    background-color: var(--blue);
+    font-size: 40px;
+    margin-top: 15px;
+    padding: 0;
+}
+
+.addToCartButton{
+    margin-right: 5px;
+}
+
+.addToFavButton{
+    margin-left: 12px;
+}
+
+h3{
+    width: 550px;
+    height: 90px;
+    color: var(--white);
+    background-color: var(--orange);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px ;
+    font-weight: 100;
+    margin-top: 0;
+}
+
+.gameDescription{
+    width: 550px;
+    height: 300px;
+    margin: 10px 0;
+    color: var(--white);
+    font-size: 40px;
+}
+
+.gameInformation{
+    height: 307px;
+    width: 530px;
+    background-color: var(--orange);
+    color: var(--white);
+    text-align: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}

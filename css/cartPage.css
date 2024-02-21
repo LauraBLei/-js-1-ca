@@ -1,0 +1,127 @@
+.cartPageContainer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.cartH2{
+    width: 360px;
+    height: 90px;
+    background-color: var(--orange);
+    color: var(--white);
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.contentDiv {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 50px;
+}
+
+.summaryAndPaymentBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cartPageImage {
+    height: auto;
+    width: 150px;
+}
+
+.gameDetails {
+    width: 200px;
+    height: 221px;
+    background-color: var(--blue);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    text-align: center;
+}
+
+.gameDetails p {
+    margin: 5px;
+    
+}
+
+.cartItemContainer {
+    display: flex;
+    width: 100%;
+    gap: 10px;
+    margin: 20px 0 20px 0;
+}
+
+.officialPriceText, .officialPriceValue, .discountValue, .discountText, .subTotalText, .subTotalValue {
+    color: var(--white);
+    font-size: 30px;
+}
+
+.officialPriceBox, .discountBox, .subTotalBox{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+}
+
+.paymentForm{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 564px;
+    height: 431px;
+    background-color: var(--orange);
+    align-items: center;
+    justify-content: center;
+}
+
+.cardInput, .nameOnCardInput {
+    width: 440px;
+    height: 76px;
+    color: var(--black);
+    font-size: 30px;
+}
+
+.CVCInput, .monthYearInput {
+    width: 208px;
+    height: 76px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.smallInputDiv {
+    display: flex;
+    gap: 15px;
+}
+
+.buyButton {
+    width: 564px;
+    height: 90px;
+    background-color: var(--blue);
+    color: var(--white);
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#cartItemBox p {
+    color: var(--white);
+    font-size: 20px;
+    max-width: 360px;
+}
+
+.goBackToHomePage{
+    width: 360px;
+    height: 70px;
+    font-size: 25px;
+    background-color: var(--blue);
+    color: var(--white);
+    font-weight: 500;
+    border: none;
+}
