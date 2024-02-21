@@ -1,10 +1,10 @@
-@import url(default.css);
-@import url(/css/header.css);
-@import url(/css/buttons.css);
-@import url(/css/homepage.css);
-@import url(/css/confirmationPage.css);
-@import url(/css/footer.css);
-@import url(/css/gamePage.css);
-@import url(/css/cartPage.css);
-@import url(/css/loader.css);
+@import url(./css/default.css);
+@import url(./css/header.css);
+@import url(./css/buttons.css);
+@import url(./css/homepage.css);
+@import url(./css/confirmationPage.css);
+@import url(./css/footer.css);
+@import url(./css/gamePage.css);
+@import url(./css/cartPage.css);
+@import url(./css/loader.css);
 
