@@ -11,9 +11,10 @@ const hideLoader = () => {
 }
 
 export const loader = async (APIFunction, Url ) => {
+    console.log("Inside loader. url: ", Url);
     showLoader()
     try{
-        APIFunction(Url)
+        await APIFunction(Url)
     }catch(error){
         alert(error)
         console.log(error);

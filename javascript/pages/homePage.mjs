@@ -48,7 +48,6 @@ const homePageMain = (arrayOfGames) => {
 export const listGames = (games) => {
     let gamePlacement = document.getElementById("gameList");
     gamePlacement.innerHTML = ""; // Clear existing content before appending new games
-  
     games.map((game) => {
       createGameCard(game, gamePlacement);
     });

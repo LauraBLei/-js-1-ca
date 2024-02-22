@@ -11,14 +11,20 @@ export const noroffAPI = "https://v2.api.noroff.dev/gamehub";
 export const dataAPI = async(url) => {
     try{
         let response = await fetch(url)
+        console.log("Api was called.");
         let games = await response.json()
         localStorage.setItem("arrayOfGames", JSON.stringify(games.data))
+    console.log("Games stored in local storage with name: arrayOfGames and value: ",games.data);
     }catch(error){
         console.error("there was a problem fetching:" + error);
     }
 }
 
-loader(dataAPI, noroffAPI)
+dataAPI(noroffAPI)
+
+
+console.log("hei!");
+// loader(dataAPI, noroffAPI)
 
 export function router() {
     const url = new URL(window.location.href);
@@ -39,6 +45,7 @@ export function router() {
     console.log(url);
     route.controller();
 }
+
 router()
 
 window.onhashchange = () => {
