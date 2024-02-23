@@ -21,7 +21,6 @@ const createEventListenerOnGenres = (arrayOfGames) => {
 };
 
 const filterByGenre = async (genre, arrayOfGames) => {
-    console.log(arrayOfGames);
     if (genre === "Show all") {
       listGames(arrayOfGames);
     } else {

@@ -1,5 +1,6 @@
-import { makeCartPageItem, calculateDiscountValue, calculateOfficialPrice, calculateSubTotalValue } from "../pages/cartPage.mjs";
-let cartTotal = 0;
+import { calculateDiscountValue, calculateOfficialPrice,calculateSubTotalValue } from "./calculators.mjs";
+import { makeCartPageItem } from "../pages/cartPage.mjs";
+
 
 export const displayCart = (cart) => {
     let cartRow = document.getElementById("cartRow")
