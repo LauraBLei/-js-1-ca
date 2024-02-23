@@ -6,7 +6,6 @@ export const goToHomePage = () => {
     const arrayOfGames = JSON.parse(localStorage.getItem("arrayOfGames"))
     makeHeader()
     homePageMain(arrayOfGames)
-    console.log("Hello Home Page");
     filterFunctions(arrayOfGames)
 
 }

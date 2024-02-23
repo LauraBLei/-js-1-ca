@@ -7,7 +7,7 @@ export const calculateOfficialPrice = () => {
     }, 0);
   
     let officialPrice = Math.round(Price * 100) / 100;
-    officialPriceText.innerText = officialPrice;
+    officialPriceText.innerText = "$" + officialPrice;
   };
   
   export const calculateDiscountValue = () => {
@@ -19,7 +19,7 @@ export const calculateOfficialPrice = () => {
     }, 0);
   
     let roundedDiscount = Math.round(discount * 100) / 100;
-    discountValue.innerText = roundedDiscount;
+    discountValue.innerText = "$" + roundedDiscount;
   };
   
   export const calculateSubTotalValue = () => {
@@ -32,5 +32,5 @@ export const calculateOfficialPrice = () => {
     }, 0);
   
     let roundedPrice = Math.round(price * 100) / 100;
-    subTotalValue.innerText = roundedPrice;
+    subTotalValue.innerText = "$" + roundedPrice;
   };

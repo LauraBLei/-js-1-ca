@@ -1,7 +1,6 @@
 const arrayOfGames = JSON.parse(localStorage.getItem("arrayOfGames"))
 import { listGames } from "../pages/homePage.mjs"
 
-console.log(arrayOfGames);
 
 export const filterFunctions = (arrayOfGames) => {
     createEventListenerNewToOld(arrayOfGames)
@@ -38,7 +37,6 @@ const filterByGenre = async (genre, arrayOfGames) => {
   };
   
   const sortByHighToLow = (listOfGames) => {
-    console.log("sorted by high to low");
     listOfGames.sort((a, b) => b.discountedPrice - a.discountedPrice);
     listGames(listOfGames);
   };
@@ -53,7 +51,6 @@ const filterByGenre = async (genre, arrayOfGames) => {
   };
   
   const sortByLowToHigh = (listOfGames) => {
-    console.log("sorted by low to high");
     listOfGames.sort((a, b) => a.discountedPrice - b.discountedPrice);
     listGames(listOfGames);
   };
@@ -68,7 +65,6 @@ const filterByGenre = async (genre, arrayOfGames) => {
   };
   
   const sortByOnSale = (listOfGames) => {
-    console.log("sorted on sale");
     let sortedList = listOfGames.filter(
       (game) => game.discountedPrice < game.price
     );
@@ -85,7 +81,6 @@ const filterByGenre = async (genre, arrayOfGames) => {
   };
   
   const sortByOldToNew = (listOfGames) => {
-    console.log("sorted from old to new");
     listOfGames.sort((a, b) => {
       return parseInt(a.released) - parseInt(b.released);
     });
@@ -101,7 +96,6 @@ const filterByGenre = async (genre, arrayOfGames) => {
   };
   
   const sortByNewToOld = (listOfGames) => {
-    console.log("sorted from new to old");
     listOfGames.sort((a, b) => {
       return parseInt(b.released) - parseInt(a.released);
     });

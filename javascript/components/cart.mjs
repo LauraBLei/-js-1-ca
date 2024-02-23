@@ -93,7 +93,6 @@ const makeCartItem = (gameDetails) => {
 
 const removeButtonClicked = (gameDetails) =>{
     let cart = JSON.parse(localStorage.getItem("cart"))
-    console.log(cart);
     cart = cart.filter(item => item.title !== gameDetails.title);
 
     localStorage.setItem('cart', JSON.stringify(cart))

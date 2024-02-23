@@ -3,7 +3,6 @@ import { makeFooter } from "../components/footer.mjs";
 import { addItemToCart } from "../components/cart.mjs";
 
 export const goToGamePage = () => {
-    console.log("Hello Game Page");
     let main = document.querySelector("main")
     main.innerHTML = ""
     

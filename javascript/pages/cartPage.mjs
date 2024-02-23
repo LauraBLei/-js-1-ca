@@ -12,7 +12,6 @@ export const goToCartPage = () => {
 
 const cartItems = () => {
   let cart = JSON.parse(localStorage.getItem("cart"));
-  console.log(cart);
 
   let main = document.querySelector("main");
 
@@ -36,7 +35,6 @@ const cartItems = () => {
   main.appendChild(pageContainer);
   pageContainer.append(h1, contentDiv);
   contentDiv.append(cartItemBox, summaryAndPaymentBox);
-  console.log;
   if (cart.length === 0) {
     makeIfCartIsEmpty();
     makeSummarySide();
@@ -150,8 +148,6 @@ const makeSummarySide = () => {
       let proceed = confirm("Are you sure you want to proceed?");
       if (proceed) {
         window.location.href = "#/confirmation/index.html";
-      } else {
-        console.log("action canceled");
       }
     } else {
       alert("There are no items in your cart");
@@ -171,7 +167,6 @@ const makeSummarySide = () => {
 export const makeCartPageItem = () => {
   let cartItems = JSON.parse(localStorage.getItem("cart"));
   let cartItemBox = document.getElementById("cartItemBox");
-  console.log(cartItemBox);
   cartItemBox.innerHTML = "";
 
   let cartH2 = document.createElement("h2");
