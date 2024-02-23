@@ -1,5 +1,5 @@
 import { makeHeader } from "../components/header.mjs";
-import { filterFunctions } from "../components/filter.mjs"
+import { filterFunctions } from "../helpers/filter.mjs"
 import { addItemToCart } from "../components/cart.mjs";
 
 export const goToHomePage = () => {

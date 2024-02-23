@@ -1,4 +1,4 @@
-import { calculateDiscountValue, calculateOfficialPrice,calculateSubTotalValue } from "./calculators.mjs";
+import { calculateDiscountValue, calculateOfficialPrice,calculateSubTotalValue } from "../helpers/calculators.mjs";
 import { makeCartPageItem } from "../pages/cartPage.mjs";
 
 

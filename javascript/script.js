@@ -8,7 +8,7 @@ import { router } from "./components/router.mjs";
 
 const start = async() => {
     await loader(fetchGames, noroffAPI)
-    await router()
+    router()
 }
 
 start ()

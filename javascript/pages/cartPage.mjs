@@ -1,6 +1,6 @@
 import { makeHeader } from "../components/header.mjs";
 import { makeFooter } from "../components/footer.mjs";
-import { calculateDiscountValue, calculateSubTotalValue, calculateOfficialPrice } from "../components/calculators.mjs";
+import { calculateDiscountValue, calculateSubTotalValue, calculateOfficialPrice } from "../helpers/calculators.mjs";
 
 export const goToCartPage = () => {
   let main = document.querySelector("main");
