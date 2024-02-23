@@ -1,7 +1,7 @@
 
 import { displayCart } from "./components/cart.mjs";
 import { loader } from "./components/loaders.mjs";
-import { fetchGames, noroffAPI } from "./components/apiFetch.mjs";
+import { fetchGames, noroffAPI } from "./helpers/apiFetch.mjs";
 import { router } from "./components/router.mjs";
 
 
