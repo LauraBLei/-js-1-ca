@@ -3,8 +3,9 @@ import { makeFooter } from "../components/footer.mjs"
 export const runConfirmationPage = () => {
     let main = document.querySelector("main")
     main.innerHTML = ""
-    let cart = JSON.parse(localStorage.getItem("cart"))
-    cart = [];
+    localStorage.removeItem("cart")
+    // let cart = JSON.parse(localStorage.getItem("cart"))
+    // cart = [];
     
     makeHeader()
     makeMainContent()
