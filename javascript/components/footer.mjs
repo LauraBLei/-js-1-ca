@@ -1,6 +1,6 @@
 export const makeFooter = () => {
-    let footer = document.querySelector("footer")
-    footer.innerHTML=`
+  let footer = document.querySelector("footer");
+  footer.innerHTML = `
     <nav class="footerNav">
             <div>
                 <h2>Information</h2>
@@ -25,5 +25,5 @@ export const makeFooter = () => {
                 </ul>
             </div>
         </nav>
-        `
-}
+        `;
+};

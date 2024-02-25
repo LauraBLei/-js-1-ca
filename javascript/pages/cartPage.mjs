@@ -1,6 +1,10 @@
 import { makeHeader } from "../components/header.mjs";
 import { makeFooter } from "../components/footer.mjs";
-import { calculateDiscountValue, calculateSubTotalValue, calculateOfficialPrice } from "../helpers/calculators.mjs";
+import {
+  calculateDiscountValue,
+  calculateSubTotalValue,
+  calculateOfficialPrice,
+} from "../helpers/calculators.mjs";
 
 export const goToCartPage = () => {
   let main = document.querySelector("main");
@@ -167,6 +171,7 @@ const makeSummarySide = () => {
 export const makeCartPageItem = () => {
   let cartItems = JSON.parse(localStorage.getItem("cart"));
   let cartItemBox = document.getElementById("cartItemBox");
+  if (cartItemBox == null) return;
   cartItemBox.innerHTML = "";
 
   let cartH2 = document.createElement("h2");
@@ -205,8 +210,3 @@ export const makeCartPageItem = () => {
     gameDetails.append(gameName, gamePrice);
   });
 };
-
-
-
-
-
